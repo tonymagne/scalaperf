@@ -1,0 +1,6 @@
+/.settings
+/lib_managed
+/target
+/.classpath
+/.project
+/.scala_dependencies
