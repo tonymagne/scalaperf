@@ -15,7 +15,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution time
+   * @return the execution time
    */
   def measureOnce1[A, B](underBenchmark: A => B, gen: Generator[A])
                        (implicit myConfig: BenchConfig = defaultConfig): Long = {
@@ -35,7 +35,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution time
+   * @return the execution time
    */
   def measureOnce2[A, B, C](underBenchmark: (A, B) => C, gen: Generator[(A, B)])
                            (implicit myConfig: BenchConfig = defaultConfig): Long = {
@@ -55,7 +55,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution time
+   * @return the execution time
    */
   def measureOnce3[A, B, C, D](underBenchmark: (A, B, C) => D, gen: Generator[(A, B, C)])
                            (implicit myConfig: BenchConfig = defaultConfig): Long = {
@@ -75,7 +75,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution time
+   * @return the execution time
    */
   def measureOnce4[A, B, C, D, E](underBenchmark: (A, B, C, D) => E, gen: Generator[(A, B, C, D)])
                            (implicit myConfig: BenchConfig = defaultConfig): Long = {
@@ -95,7 +95,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution time
+   * @return the execution time
    */
   def measureOnce5[A, B, C, D, E, F](underBenchmark: (A, B, C, D, E) => F, gen: Generator[(A, B, C, D, E)])
                            (implicit myConfig: BenchConfig = defaultConfig): Long = {
@@ -114,7 +114,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution times statistics
+   * @return the execution times statistics
    */
   def benchmark1[A, B](underBenchmark: A => B, gen: Generator[A])
                       (implicit myConfig: BenchConfig = defaultConfig): BenchResult = {
@@ -134,7 +134,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution times statistics
+   * @return the execution times statistics
    */
   def benchmark2[A, B, C](underBenchmark: (A, B) => C, gen: Generator[(A, B)])
                          (implicit myConfig: BenchConfig = defaultConfig): BenchResult = {
@@ -154,7 +154,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution times statistics
+   * @return the execution times statistics
    */
   def benchmark3[A, B, C, D](underBenchmark: (A, B, C) => D, gen: Generator[(A, B, C)])
                             (implicit myConfig: BenchConfig = defaultConfig): BenchResult = {
@@ -174,7 +174,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution times statistics
+   * @return the execution times statistics
    */
   def benchmark4[A, B, C, D, E](underBenchmark: (A, B, C, D) => E, gen: Generator[(A, B, C, D)])
                             (implicit myConfig: BenchConfig = defaultConfig): BenchResult = {
@@ -194,7 +194,7 @@ package object bench {
    * 
    * @param underBenchmark the function
    * @param gen            the parameter generator
-   * @returns the execution times statistics
+   * @return the execution times statistics
    */
   def benchmark5[A, B, C, D, E, F](underBenchmark: (A, B, C, D, E) => F, gen: Generator[(A, B, C, D, E)])
                             (implicit myConfig: BenchConfig = defaultConfig): BenchResult = {
