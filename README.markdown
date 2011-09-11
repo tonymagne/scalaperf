@@ -25,6 +25,8 @@ It is inspired by Brent Boyer's articles on Java benchmarking:
   (with minimum overhead, a few nanoseconds)
 - allows to measure the throughput of a function
 
+### Add Scalaperf as an dependency of your project ###
+libraryDependencies += "org.scalaperf" %% "scalaperf" % "0.1.1"
 
 ### Example 1 ###
 Benchmarks the fibonacci function using the default configuration (10 second warmup, 60 measurements)  
